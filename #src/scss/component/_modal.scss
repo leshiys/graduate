@@ -1,0 +1,144 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content;}
+  &::-moz-placeholder { @content;}
+  &:-moz-placeholder { @content;}
+  &:-ms-input-placeholder { @content;}
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  &__background {
+    width: 100%;
+    height: 100vh;
+    background: #000c;
+  }
+  &__window {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    min-width: 320px;
+    max-width: 450px;
+    background: $modalgradient;
+    &--left {
+      top: 0;
+      left: 0;
+      text-align: center;
+    }
+    &--right {
+      top: 0;
+      right: 0;
+      text-align: center;
+    }
+    &--center {
+      align-items: center;
+      top: 15%;
+      left: 50%;
+      height: 540px;
+      border: 1px solid white;
+      align-items: center;
+      transform: translateX(-50%);
+      text-align: center;
+      background: $modalgradient-2;
+      @media screen and (max-width: 575px) {
+        top: 5%;
+        height: 520px;
+      }
+    }
+  }
+  &__close-button {
+    color: $modalTextColor;
+    position: absolute;
+    display: flex;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid $modalTextColor;
+    cursor: pointer;
+    &--left {
+      left: 20px;
+    }
+    &--right {
+      right: 20px;
+    }
+    &--line-1 {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 80%;
+      height: 80%;
+      border-radius: 50%;
+      background: linear-gradient(45deg, transparent 48%, #fff 47%, #fff 53%, transparent 52%);
+    }
+    &--line-2 {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 80%;
+      height: 80%;
+      border-radius: 50%;
+      background: linear-gradient(-45deg, transparent 48%, #fff 47%, #fff 53%, transparent 52%);
+    }
+  }
+  &__menu {
+    margin: 80px 20px 20px;
+    &-item {
+      margin: 20px 10px;
+      color: $modalTextColor;
+      font-size: 25px;
+      &>.mainButton {
+        width: 280px;
+        @media screen and (max-width: 575px){
+          width: 260px;
+        }
+      }
+    }
+    &-link {
+      color: $modalTextColor;
+      font-size: 25px;
+    }
+    &-comment {
+      color: $modalTextColor;
+      font-size: 16px;
+    }
+    &-input {
+      background: transparent;
+      color: #fffb;
+      font-size: 22px;
+      font-weight: 400;
+      width: 280px;
+      border: 2px solid #fff9;
+      border-radius: 5px;
+      padding: 10px 10px;
+      text-align: center;
+      @include placeholder {
+        color: #fff4;
+        font-size: 18px;
+        text-align: center;
+      }
+      @media screen and (max-width: 575px)  {
+        width: 260px;
+      }
+    }
+    &>:first-child {
+      padding: 20px 0;
+      border-top: 1px solid $modalTextColor;
+      border-bottom: 1px solid $modalTextColor;
+    }
+    &>:last-child {
+      padding-top: 20px;
+      border-top: 1px solid $modalTextColor;
+    }
+  }
+  &__personal-data {
+    color: #fff9;
+    font-size: 11px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

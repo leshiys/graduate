@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:29px 0;
+  @media screen and (max-width: 767px) {
+    padding:26px 0;
+  }
+  &__burger {
+      height: 32px;
+      width: 45px;
+      cursor: pointer;
+      background: url(../img/sprite.png) 0px -0px no-repeat;
+      display: none;
+      @media screen and (max-width: 991px) {
+        display: inline;
+      }
+      @media screen and (max-width: 767px) {
+        height: 18px;
+        width: 24px;
+        background: url(../img/sprite.png) 0px -50px no-repeat;
+      }
+  }
+  &__nav {
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+  &__menu {
+    display: flex;
+    &-item {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-link {
+      color : $hederTextColor;
+      font-size: 16px;
+      letter-spacing: 0.15px;
+      padding: 0 0 1px;
+      border-bottom: 1px solid transparent;
+      transition: color .2s, border-bottom .2s;
+      &:hover {
+        color: $hederTextColor2;
+        border-bottom: 1px solid $hederTextColor2;
+      }
+    }
+  }
+  &__phone-link {
+    margin: 0 27px 0 auto;
+    font-size: 25px;
+    font-weight: 700;
+    color : $hederTextColor;
+    transition: color .2s;
+    &:hover {
+      color: $mainTextColor;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+  &__button-big {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__button-small {
+      height: 26px;
+      width: 26px;
+      cursor: pointer;
+      background: url(../img/sprite.png) -500px -0px no-repeat;
+      display: none;
+      @media screen and (max-width: 767px) {
+        display: inline;
+      }
+  }
+}

@@ -1,0 +1,51 @@
+.portfolio {
+  background: $grayBGcolor;
+  text-align: center;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__title {
+    padding-top: 90px;
+    @media screen and (max-width: 1199px) {
+      padding-top: 92px;
+    }
+    @media screen and (max-width: 575px) {
+      padding-top: 44px;
+      line-height: 35px;
+    }
+  }
+  &__button {
+    margin-top: 79px;
+    margin-bottom: 101px;
+    @media screen and (max-width: 1199px) {
+      margin-top: 85px;
+      margin-bottom: 102px;
+    }
+    @media screen and (max-width: 575px) {
+      margin-top: 36px;
+      margin-bottom: 51px;
+    }
+  }
+  &__card {
+    position: relative;
+    overflow: hidden;
+    &-image {
+      width: 100%;
+      max-width: 460px;
+      min-width: 280px;
+    }
+    &-text {
+      margin-top: 30px;
+      @media screen and (max-width: 1199px) {
+        font-size: 25px;
+        margin-top: 18px;
+      }
+      @media screen and (max-width: 575px) {
+        font-size: 17.6px;
+        margin-top: 15px;
+      }
+    }
+  }
+}

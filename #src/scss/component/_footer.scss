@@ -1,0 +1,203 @@
+.footer {
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 77px 20px 79px 0px;
+    @media screen and (max-width: 1199px) {
+      padding: 100px 0px 78px 0px;
+    }
+    @media screen and (max-width: 767px) {
+      flex-flow: column;
+      padding: 0;
+      align-items: flex-start;
+    }
+  }
+  &__nav, &__col2, &__col3 {
+    display: flex;
+    flex-flow: column;
+    height: 90px;
+    justify-content: space-between;
+  }
+  &__col1 {
+    @media screen and (max-width: 767px) {
+    padding-top: 44px;
+  }
+  }
+  &__nav {
+    width: 150px;
+    &-link {
+      transition: color .3s;
+      &:hover {
+        color: $hederTextColor2;
+      }
+    }
+    @media screen and (max-width: 1199px) {
+      width: 115px;
+    }
+  }
+  &__col2 {
+    @media screen and (max-width: 767px) {
+      margin-top: 40px;
+    }
+  }
+  &__contacts {
+    font-size: 25px;
+    color: $hederTextColor;
+    transition: color .2s;
+    &:hover {
+      color: $mainTextColor;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      color: $mainTextColor;
+      height: 60px;
+    }
+  }
+  &__fa {
+    margin-right: 15px;
+    background: $gradient;
+    background-clip: text;
+    color: transparent;
+  }
+  &__col3 {
+    height: 106px;
+    @media screen and (max-width: 767px) {
+      height: 138px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 50px;
+    }
+  }
+  &__button {
+    width: 250px;
+    @media screen and (max-width: 767px) {
+      color: white;
+      background-color: #ff4e2e;
+      margin-top: 4px;
+      max-width: 100%;
+      width: 280px;
+      height: 55px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: box-shadow .2s;
+        &:hover {
+          box-shadow: 1px 1px 4px $mainTextColor;
+      }
+    }
+  }
+  &__nets {
+    display: flex;
+    align-items: flex-end;
+    &-item {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.vk {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 22px;
+  cursor: pointer;
+  background: url(../img/sprite.png) -100px -0px no-repeat;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/sprite.png) -100px -50px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.fb {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 28px;
+  cursor: pointer;
+  background: url(../img/sprite.png) -200px -0px no-repeat;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/sprite.png) -200px -50px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.tw {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  background: url(../img/sprite.png) -300px -0px no-repeat;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/sprite.png) -300px -50px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.inst {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background: url(../img/sprite.png) -400px -0px no-repeat;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/sprite.png) -400px -50px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.copyright {
+  background: #31293c;
+  padding: 30px 0 32px 0;
+  text-align: center;
+  font-size: 16px;
+  color: $whiteTextColor;
+  @media screen and (max-width: 575px) {
+    font-size: 12px;
+    padding: 20px 0 20px 0;
+  }
+}

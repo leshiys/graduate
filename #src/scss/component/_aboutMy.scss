@@ -1,0 +1,225 @@
+.about-my {
+  position: relative;
+  height: 665px;
+  min-width: 320px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+  &__background {
+    position: absolute;
+    height: 665px;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    @media screen and (max-width: 575px) {
+      height: 390px;
+    }
+  }
+  &__svg-element {
+    position: absolute;
+    width: 920px;
+    height: 764px;
+    top: 50%;
+    left: 80%;
+    transform: translate(-46%, -38.7%);
+    @media screen and (max-width: 1199px) {
+      height: 650px;
+      transform: translate(-37%, -30%);
+    }
+    @media screen and (max-width: 767px) {
+      transform: translate(-57%, -30%);
+    }
+    @media screen and (max-width: 575px) {
+      height: 400px;
+      width: 485px;
+      transform: translate(-66%, -25%);
+    }
+  }
+  &__my-foto {
+    position: absolute;
+    bottom: 0%;
+    left: 75%;
+    transform: translatex(-50%);
+    height: 93%;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3));
+    @media screen and (max-width: 1199px) {
+      transform: translatex(-50%);
+    }
+    @media screen and (max-width: 767px) {
+      transform: translatex(-70%);
+    }
+    @media screen and (max-width: 575px) {
+      transform: translatex(-70%);
+      height: 88%;
+    }
+  }
+  &__title {
+    padding-top: 183px;
+    @media screen and (max-width: 1199px) {
+      padding-top: 210px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-top: 733px;
+    }
+    @media screen and (max-width: 575px) {
+      padding-top: 402px;
+    }
+  }
+  &__text {
+    padding-top: 14px;
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 25px;
+    &--break {
+      display: none;
+      @media screen and (max-width: 991px) {
+        display: inline;
+      }
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 1199px) {
+    font-size: 23px;
+    padding-top: 18px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    }
+    @media screen and (max-width: 575px) {
+      padding-top: 10px;
+      font-size: 16px;
+    }
+  }
+  &__button {
+    margin-top: 45px;
+    margin-bottom: 21px;
+    @media screen and (max-width: 1199px) {
+      margin-top: 44px;
+    }
+    @media screen and (max-width: 575px) {
+      margin-top: 24px;
+    }
+  }
+}
+.fly-text {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  background: $gradient;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  &__elem {
+    &-1 {
+      &--position {
+        animation-name: fly1;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+      }
+      &--size {
+        font-size: 57px;
+        @media screen and (max-width: 575px) {
+          font-size: 30px;
+        }
+      }
+    }
+    &-2 {
+      &--position {
+        animation-name: fly2;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+      }
+      &--size {
+        font-size: 48px;
+        @media screen and (max-width: 575px) {
+          font-size: 25px;
+        }
+      }
+    }
+    &-3 {
+      &--position {
+        animation-name: fly3;
+        animation-iteration-count: 1;
+        animation-duration: 1.3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+      }
+      &--size {
+        font-size: 32px;
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+    &-4 {
+      &--position {
+        animation-name: fly4;
+        animation-iteration-count: 1;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+      }
+      &--size {
+        font-size: 40px;
+        @media screen and (max-width: 1599px) {
+          display: none;
+        }
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+        @media screen and (max-width: 575px) {
+          font-size: 18px;
+        }
+      }
+    }
+    &-5 {
+      &--position {
+        animation-name: fly5;
+        animation-iteration-count: 1;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+      }
+      &--size {
+        font-size: 40px;
+        @media screen and (max-width: 991px) {
+          display: none;
+        }
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+        @media screen and (max-width: 575px) {
+          font-size: 18px;
+        }
+      }
+    }
+    &-6 {
+      &--position {
+        animation-name: fly6;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+      }
+      &--size {
+        font-size: 47px;
+        display: none;
+        @media screen and (max-width: 1199px) {
+          display: block;
+        }
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@import "animate";

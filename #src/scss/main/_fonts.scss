@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), 
+  url('../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'),
+  url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v20-cyrillic_latin-900.woff2') format('woff2'),
+  url('../fonts/roboto-v20-cyrillic_latin-900.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'swiper-icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/swiper.woff2') format('woff2'),
+  url('../fonts/swiper.woff') format('woff');
+}

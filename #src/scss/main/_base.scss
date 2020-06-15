@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  color: $mainTextColor;
+  font-family: $mainFont;
+  font-size: 20px;
+  font-weight: 400;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+.start-block, .end-block {
+  width: 100%;
+  height: 1px;
+}
+a {
+  text-decoration: none;
+}
+.title-1 {
+  font-family: $mainFont;
+  font-weight: 900;
+  font-size: 80px;
+  color: #000;
+}
+@media screen and (max-width: 1199px) {
+  .title-1 {
+    font-size: 54px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title-1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .title-1 {
+    font-size: 30px;
+  }
+}
+.title-2 {
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 54px;
+  color: #000;
+}
+@media screen and (max-width: 767px) {
+  .title-2 {
+    text-align: center;
+    font-size: 7vw;
+  }
+}
+@media screen and (max-width: 575px) {
+  .title-2 {
+    font-size: 30px;
+  }
+}
+.title-3 {
+  color: $whiteTextColor;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+@media screen and (max-width: 767px) {
+  .title-3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+li {
+  list-style-type: none;
+}
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    width: auto;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+.mainButton {
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background-color: #ff4e2e;
+  padding: auto;
+  width: 270px;
+  max-width: 100%;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow .2s;
+    &:hover {
+      box-shadow: 1px 1px 4px $mainTextColor;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .mainButton {
+    width: 320px;
+    height: 68px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mainButton {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mainButton {
+    width: 280px;
+    height: 55px;
+    font-size: 16px;
+  }
+}
+.borderButton {
+  display: block;
+  width: 207px;
+  height: 45px;
+  color: $hederTextColor2;
+  border: 1px solid $hederTextColor2;
+  font-size: 16px;
+  cursor: pointer;
+  transition: box-shadow .2s;
+    &:hover {
+      box-shadow: 1px 1px 4px $hederTextColor2;
+    }
+}
+.block {
+  &__background-color {
+    &--gray {
+      background-color: $grayBGcolor;
+    }
+    &--white {
+      background-color: white;
+    }
+  }
+}
