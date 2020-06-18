@@ -7,58 +7,38 @@ $(function () {
   function enableScroll() {
     $('body').css('overflow', 'visible')
   }
-
+  // in modal
   $('.header__burger')
     .click(function () {
       $('.modal--left').fadeIn(200, disableScroll);
       return false;
-    });
-  $('.modal__close-button')
-    .click(function () {
-      $('.modal').fadeOut(200, enableScroll);
-    });
-  $('.modal__background')
-    .click(function (event) {
-      if (event.target == this) {
-        $('.modal').fadeOut(200, enableScroll);
-      }
-    });
-  $('.modal__menu-link')
-    .click(function (event) {
-      if (event.target == this) {
-        $('.modal').fadeOut(200, enableScroll);
-      }
     });
   $('.header__button')
     .click(function () {
       $('.modal--right').fadeIn(200, disableScroll);
       return false;
     });
-  $('.service__button')
+  $('.in-modal__center')
     .click(function () {
       $('.modal--center').fadeIn(200, disableScroll);
       return false;
     });
-  $('.portfolio__button')
+
+  // out modal
+  $('.modal__close-button')
     .click(function () {
-      $('.modal--center').fadeIn(200, disableScroll);
-      return false;
+      $('.modal').fadeOut(200, enableScroll);
     });
-  $('.about-my__button')
-    .click(function () {
-      $('.modal--center').fadeIn(200, disableScroll);
-      return false;
+  $('.modal__close')
+    .click(function (event) {
+      if (event.target == this) {
+        $('.modal').fadeOut(200, enableScroll);
+      }
     });
-  $('.footer__button')
-    .click(function () {
-      $('.modal--center').fadeIn(200, disableScroll);
-      return false;
-    });
+
+  // modal mask
   $(function () {
-    $("#phone").mask("8(999) 999-99-99");
-  });
-  $(function () {
-    $("#phone_1").mask("8(999) 999-99-99");
+    $(".phone").mask("+7(999) 999-99-99");
   });
   function testWebP(callback) {
       var webP = new Image();

@@ -155,6 +155,7 @@ li {
 
 .modal__window {
   position: absolute;
+  overflow: auto;
   height: 100%;
   width: 60%;
   min-width: 320px;
@@ -182,7 +183,7 @@ li {
           align-items: center;
   top: 15%;
   left: 50%;
-  height: 540px;
+  max-height: 540px;
   border: 1px solid white;
   align-items: center;
   -webkit-transform: translateX(-50%);
@@ -1414,6 +1415,11 @@ li {
     width: 280px;
   }
 
+  .modal__window--center {
+    top: 5%;
+    height: 90%;
+  }
+
   .header__burger {
     display: inline;
   }
@@ -1698,8 +1704,9 @@ li {
   }
 
   .modal__window--center {
-    top: 5%;
-    height: 520px;
+    top: 2%;
+    max-height: 545px;
+    height: 98%;
   }
 
   .modal__menu-item > .mainButton {

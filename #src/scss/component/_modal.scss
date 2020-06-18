@@ -19,6 +19,7 @@
   }
   &__window {
     position: absolute;
+    overflow: auto;
     height: 100%;
     width: 60%;
     min-width: 320px;
@@ -38,15 +39,20 @@
       align-items: center;
       top: 15%;
       left: 50%;
-      height: 540px;
+      max-height: 540px;
       border: 1px solid white;
       align-items: center;
       transform: translateX(-50%);
       text-align: center;
       background: $modalgradient-2;
-      @media screen and (max-width: 575px) {
+      @media screen and (max-width: 991px) {
         top: 5%;
-        height: 520px;
+        height: 90%;
+      }
+      @media screen and (max-width: 575px) {
+        top: 2%;
+        max-height: 545px;
+        height: 98%;
       }
     }
   }
