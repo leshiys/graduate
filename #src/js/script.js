@@ -40,7 +40,29 @@ $(function () {
   $(function () {
     $(".phone").mask("+7(999) 999-99-99");
   });
+
   @@include('components/webpadd.js');
   @@include('components/radius.js');
   @@include('components/swiper-custom.js');
+
+  // form send
+  $(".form").submit(function (e) {
+    e.preventDefault();
+    var msg = $(this).serialize();
+    $.ajax({
+      type: 'POST',
+      url: '../php/form.php',
+      data: msg,
+      success: function (response) {
+        console.log(response);
+        if (response === 'send Finished') {
+          $('.modal').fadeOut(200, enableScroll);
+          $('.modal__sent').fadeIn(200, disableScroll);
+        } else {
+          $('.modal').fadeOut(200, enableScroll);
+          $('.modal__error').fadeIn(200, disableScroll);
+        }
+      }
+    })
+  });
 });
