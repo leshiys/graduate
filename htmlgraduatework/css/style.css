@@ -195,6 +195,24 @@ li {
   background: linear-gradient(0deg, #000a 5%, #a76140dd 50%, #000a 100%);
 }
 
+.modal__window--send {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 30%;
+  left: 50%;
+  max-height: 280px;
+  border: 1px solid white;
+  align-items: center;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #000a), color-stop(50%, #a76140dd), to(#000a));
+  background: -o-linear-gradient(bottom, #000a 5%, #a76140dd 50%, #000a 100%);
+  background: linear-gradient(0deg, #000a 5%, #a76140dd 50%, #000a 100%);
+}
+
 .modal__close-button {
   color: #fff;
   position: absolute;
@@ -1420,6 +1438,11 @@ li {
     height: 90%;
   }
 
+  .modal__window--send {
+    top: 20%;
+    height: 50%;
+  }
+
   .header__burger {
     display: inline;
   }
@@ -1707,6 +1730,12 @@ li {
     top: 2%;
     max-height: 545px;
     height: 98%;
+  }
+
+  .modal__window--send {
+    top: 25%;
+    max-height: 300px;
+    height: 55%;
   }
 
   .modal__menu-item > .mainButton {

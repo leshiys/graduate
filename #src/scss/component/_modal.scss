@@ -55,6 +55,26 @@
         height: 98%;
       }
     }
+    &--send {
+      align-items: center;
+      top: 30%;
+      left: 50%;
+      max-height: 280px;
+      border: 1px solid white;
+      align-items: center;
+      transform: translateX(-50%);
+      text-align: center;
+      background: $modalgradient-2;
+      @media screen and (max-width: 991px) {
+        top: 20%;
+        height: 50%;
+      }
+      @media screen and (max-width: 575px) {
+        top: 25%;
+        max-height: 300px;
+        height: 55%;
+      }
+    }
   }
   &__close-button {
     color: $modalTextColor;
