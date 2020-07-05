@@ -116,11 +116,11 @@ $(function () {
       success: function (response) {
         console.log(response);
         if (response === 'send Finished') {
-          $('.modal').fadeOut(200, enableScroll);
-          $('.modal__sent').fadeIn(200, disableScroll);
+          $('.modal').fadeOut(1);
+          $('.modal__sent').fadeIn(1);
         } else {
-          $('.modal').fadeOut(200, enableScroll);
-          $('.modal__error').fadeIn(200, disableScroll);
+          $('.modal').fadeOut(1);
+          $('.modal__error').fadeIn(1);
         };
         return false;
       }

@@ -11,7 +11,7 @@ $mail->isSMTP();
 $mail->Host = 'smtp.mail.ru';
 $mail->SMTPAuth = true;
 $mail->Username = 'graduate-work@mail.ru';
-$mail->Password = 'hvbgs5i87hte8%^&^';
+$mail->Password = '***********';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
